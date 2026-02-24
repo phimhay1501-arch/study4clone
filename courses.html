@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Browse English learning courses">
+    <title>Courses - LearnHub</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">LearnHub</a>
+                <nav class="nav-menu">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="dictionary.html" class="nav-link">Dictionary</a>
+                    <a href="tests.html" class="nav-link">Practice Tests</a>
+                    <a href="flashcards.html" class="nav-link">Flashcards</a>
+                    <a href="courses.html" class="nav-link">Courses</a>
+                    <a href="blog.html" class="nav-link">Blog</a>
+                </nav>
+                <div class="nav-actions">
+                    <a href="#" id="loginBtn" class="btn btn-outline btn-sm">Login</a>
+                    <a href="dashboard.html" class="btn btn-primary btn-sm">Dashboard</a>
+                </div>
+                <button class="menu-toggle"><span></span><span></span><span></span></button>
+            </div>
+        </div>
+    </header>
+
+    <main style="padding: 40px 0;">
+        <div class="container">
+            <h1 style="margin-bottom: 32px;">All Courses</h1>
+
+            <!-- Filters -->
+            <div class="card mb-6">
+                <div class="grid grid-4 gap-4">
+                    <div>
+                        <label class="form-label">Category</label>
+                        <select class="form-select" id="filterCategory">
+                            <option value="all">All Categories</option>
+                            <option value="ielts">IELTS</option>
+                            <option value="toeic">TOEIC</option>
+                            <option value="speaking">Speaking</option>
+                            <option value="writing">Writing</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="form-label">Level</label>
+                        <select class="form-select" id="filterLevel">
+                            <option value="all">All Levels</option>
+                            <option value="beginner">Beginner</option>
+                            <option value="intermediate">Intermediate</option>
+                            <option value="advanced">Advanced</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="form-label">Sort By</label>
+                        <select class="form-select" id="sortBy">
+                            <option value="popular">Most Popular</option>
+                            <option value="rating">Highest Rated</option>
+                            <option value="price">Price: Low to High</option>
+                        </select>
+                    </div>
+                    <div style="display: flex; align-items: flex-end;">
+                        <button class="btn btn-primary" style="width: 100%;" id="applyFilters">Apply</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Courses Grid -->
+            <div class="grid grid-3" id="coursesGrid"></div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>LearnHub</h4>
+                </div>
+                <div class="footer-section">
+                    <h4>Learn</h4>
+                    <div class="footer-links"><a href="dictionary.html" class="footer-link">Dictionary</a></div>
+                </div>
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <div class="footer-links"><a href="blog.html" class="footer-link">Blog</a></div>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <div class="footer-links"><a href="#" class="footer-link">Help</a></div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 LearnHub. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="common.js"></script>
+    <script src="courses.js"></script>
+</body>
+
+</html>

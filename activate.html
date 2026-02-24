@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activate Account - LearnHub</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">LearnHub</a>
+                <nav class="nav-menu">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="dictionary.html" class="nav-link">Dictionary</a>
+                    <a href="tests.html" class="nav-link">Practice Tests</a>
+                    <a href="flashcards.html" class="nav-link">Flashcards</a>
+                    <a href="courses.html" class="nav-link">Courses</a>
+                    <a href="blog.html" class="nav-link">Blog</a>
+                </nav>
+                <div class="nav-actions">
+                    <a href="#" id="loginBtn" class="btn btn-outline btn-sm">Login</a>
+                    <a href="dashboard.html" class="btn btn-primary btn-sm">Dashboard</a>
+                </div>
+                <button class="menu-toggle"><span></span><span></span><span></span></button>
+            </div>
+        </div>
+    </header>
+
+    <main style="padding: 80px 0; min-height: calc(100vh - 400px);">
+        <div class="container container-narrow">
+            <div class="card" style="padding: 60px 40px; text-align: center;">
+                <div style="font-size: 5rem; margin-bottom: 24px;">🔑</div>
+                <h1 style="margin-bottom: 16px;">Activate Your Account</h1>
+                <p style="color: var(--color-gray-600); margin-bottom: 32px;">Enter your activation code to unlock
+                    premium features</p>
+
+                <form id="activationForm" style="max-width: 400px; margin: 0 auto;">
+                    <div class="form-group">
+                        <label class="form-label">Activation Code</label>
+                        <input type="text" id="activationCode" class="form-input" placeholder="XXXX-XXXX-XXXX-XXXX"
+                            required style="text-align: center; font-size: 1.125rem; letter-spacing: 2px;">
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;">Activate Account</button>
+                </form>
+
+                <div class="mt-6">
+                    <p style="font-size: 0.875rem; color: var(--color-gray-500);">
+                        Don't have an activation code? <a href="courses.html"
+                            class="text-primary font-semibold">Purchase a course</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>LearnHub</h4>
+                </div>
+                <div class="footer-section">
+                    <h4>Learn</h4>
+                    <div class="footer-links"><a href="dictionary.html" class="footer-link">Dictionary</a></div>
+                </div>
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <div class="footer-links"><a href="blog.html" class="footer-link">Blog</a></div>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <div class="footer-links"><a href="#" class="footer-link">Help</a></div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 LearnHub. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="common.js"></script>
+    <script>
+        document.getElementById('activationForm').addEventListener('submit', (e) => {
+            e.preventDefault();
+            const code = document.getElementById('activationCode').value;
+            if (code) {
+                showAlert('Account activated successfully! 🎉', 'success');
+                setTimeout(() => window.location.href = 'dashboard.html', 2000);
+            }
+        });
+    </script>
+</body>
+
+</html>

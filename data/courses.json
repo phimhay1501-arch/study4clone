@@ -1,0 +1,8 @@
+[
+  { "id": 1, "title": "IELTS Complete Preparation", "category": "ielts", "level": "intermediate", "icon": "🎯", "price": 79, "originalPrice": 129, "rating": 4.8, "students": 45230, "description": "Master all four skills with comprehensive practice materials" },
+  { "id": 2, "title": "TOEIC Mastery Program", "category": "toeic", "level": "intermediate", "icon": "📝", "price": 69, "originalPrice": 119, "rating": 4.9, "students": 38500, "description": "Achieve your target score with strategic practice" },
+  { "id": 3, "title": "Advanced English Speaking", "category": "speaking", "level": "advanced", "icon": "💬", "price": 59, "originalPrice": 99, "rating": 4.7, "students": 28900, "description": "Build fluency and confidence in conversation" },
+  { "id": 4, "title": "IELTS Writing Mastery", "category": "writing", "level": "intermediate", "icon": "✍️", "price": 65, "originalPrice": 109, "rating": 4.6, "students": 22100, "description": "Learn to write high-scoring IELTS essays" },
+  { "id": 5, "title": "Business English for TOEIC", "category": "toeic", "level": "beginner", "icon": "💼", "price": 55, "originalPrice": 89, "rating": 4.5, "students": 19800, "description": "Essential business vocabulary and grammar" },
+  { "id": 6, "title": "IELTS Listening Intensive", "category": "ielts", "level": "intermediate", "icon": "🎧", "price": 49, "originalPrice": 79, "rating": 4.8, "students": 31200, "description": "Improve your listening skills with proven techniques" }
+]

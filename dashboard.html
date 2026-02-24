@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - LearnHub</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">LearnHub</a>
+                <nav class="nav-menu">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="dictionary.html" class="nav-link">Dictionary</a>
+                    <a href="tests.html" class="nav-link">Practice Tests</a>
+                    <a href="flashcards.html" class="nav-link">Flashcards</a>
+                    <a href="courses.html" class="nav-link">Courses</a>
+                    <a href="blog.html" class="nav-link">Blog</a>
+                </nav>
+                <div class="nav-actions">
+                    <button class="btn btn-outline btn-sm" id="logoutBtn">Logout</button>
+                </div>
+                <button class="menu-toggle"><span></span><span></span><span></span></button>
+            </div>
+        </div>
+    </header>
+
+    <main style="padding: 40px 0;">
+        <div class="container">
+            <h1 style="margin-bottom: 32px;">My Dashboard</h1>
+
+            <!-- Stats Overview -->
+            <div class="grid grid-4 mb-8">
+                <div class="card">
+                    <div style="font-size: 0.875rem; color: var(--color-gray-600); margin-bottom: 8px;">Tests Completed
+                    </div>
+                    <div style="font-size: 2rem; font-weight: 700; color: var(--color-primary);">24</div>
+                    <div style="font-size: 0.875rem; color: var(--color-secondary); margin-top: 4px;">+3 this week</div>
+                </div>
+                <div class="card">
+                    <div style="font-size: 0.875rem; color: var(--color-gray-600); margin-bottom: 8px;">Average Score
+                    </div>
+                    <div style="font-size: 2rem; font-weight: 700; color: var(--color-secondary);">7.5</div>
+                    <div style="font-size: 0.875rem; color: var(--color-primary); margin-top: 4px;">+0.5 improvement
+                    </div>
+                </div>
+                <div class="card">
+                    <div style="font-size: 0.875rem; color: var(--color-gray-600); margin-bottom: 8px;">Flashcards
+                        Mastered</div>
+                    <div style="font-size: 2rem; font-weight: 700; color: var(--color-teal);">1,250</div>
+                    <div style="font-size: 0.875rem; color: var(--color-secondary); margin-top: 4px;">+120 this month
+                    </div>
+                </div>
+                <div class="card">
+                    <div style="font-size: 0.875rem; color: var(--color-gray-600); margin-bottom: 8px;">Study Streak
+                    </div>
+                    <div style="font-size: 2rem; font-weight: 700; color: var(--color-warning);">15 🔥</div>
+                    <div style="font-size: 0.875rem; color: var(--color-gray-500); margin-top: 4px;">days in a row</div>
+                </div>
+            </div>
+
+            <div class="grid grid-3" style="gap: 32px;">
+                <!-- Main Content -->
+                <div style="grid-column: span 2;">
+                    <!-- Recent Activity -->
+                    <div class="card mb-6">
+                        <h2 style="margin-bottom: 24px;">Recent Activity</h2>
+                        <div class="flex-col gap-4">
+                            <div class="flex gap-4"
+                                style="padding: 16px; background: var(--color-gray-50); border-radius: var(--radius-md);">
+                                <div
+                                    style="width: 48px; height: 48px; background: var(--gradient-primary); border-radius: var(--radius-md); display: flex; align-items: center; justify-content: center; font-size: 1.5rem;">
+                                    📝</div>
+                                <div style="flex: 1;">
+                                    <h4 style="margin-bottom: 4px;">Completed IELTS Reading Test 1</h4>
+                                    <p style="font-size: 0.875rem; color: var(--color-gray-600);">Score: 8.0 • 2 hours
+                                        ago</p>
+                                </div>
+                                <span class="badge badge-success">Excellent</span>
+                            </div>
+                            <div class="flex gap-4"
+                                style="padding: 16px; background: var(--color-gray-50); border-radius: var(--radius-md);">
+                                <div
+                                    style="width: 48px; height: 48px; background: var(--gradient-secondary); border-radius: var(--radius-md); display: flex; align-items: center; justify-content: center; font-size: 1.5rem;">
+                                    🎴</div>
+                                <div style="flex: 1;">
+                                    <h4 style="margin-bottom: 4px;">Studied IELTS Vocabulary Deck</h4>
+                                    <p style="font-size: 0.875rem; color: var(--color-gray-600);">45 cards reviewed •
+                                        Yesterday</p>
+                                </div>
+                                <span class="badge badge-primary">Progress</span>
+                            </div>
+                            <div class="flex gap-4"
+                                style="padding: 16px; background: var(--color-gray-50); border-radius: var(--radius-md);">
+                                <div
+                                    style="width: 48px; height: 48px; background: linear-gradient(135deg, var(--color-teal) 0%, var(--color-cyan) 100%); border-radius: var(--radius-md); display: flex; align-items: center; justify-content: center; font-size: 1.5rem;">
+                                    🎯</div>
+                                <div style="flex: 1;">
+                                    <h4 style="margin-bottom: 4px;">Enrolled in TOEIC Mastery Course</h4>
+                                    <p style="font-size: 0.875rem; color: var(--color-gray-600);">3 days ago</p>
+                                </div>
+                                <span class="badge badge-primary">New</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Enrolled Courses -->
+                    <div class="card">
+                        <h2 style="margin-bottom: 24px;">My Courses</h2>
+                        <div class="flex-col gap-4">
+                            <div class="flex gap-4"
+                                style="padding: 16px; border: 2px solid var(--color-gray-200); border-radius: var(--radius-md);">
+                                <div
+                                    style="width: 80px; height: 80px; background: var(--gradient-primary); border-radius: var(--radius-md); display: flex; align-items: center; justify-content: center; font-size: 2rem;">
+                                    🎯</div>
+                                <div style="flex: 1;">
+                                    <h4 style="margin-bottom: 8px;">IELTS Complete Preparation</h4>
+                                    <div class="flex-between mb-2">
+                                        <span style="font-size: 0.875rem; color: var(--color-gray-600);">Progress:
+                                            65%</span>
+                                    </div>
+                                    <div
+                                        style="height: 6px; background: var(--color-gray-200); border-radius: var(--radius-full);">
+                                        <div
+                                            style="height: 100%; width: 65%; background: var(--gradient-primary); border-radius: var(--radius-full);">
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="course-detail.html?id=1" class="btn btn-primary btn-sm">Continue</a>
+                            </div>
+                            <div class="flex gap-4"
+                                style="padding: 16px; border: 2px solid var(--color-gray-200); border-radius: var(--radius-md);">
+                                <div
+                                    style="width: 80px; height: 80px; background: var(--gradient-secondary); border-radius: var(--radius-md); display: flex; align-items: center; justify-content: center; font-size: 2rem;">
+                                    📝</div>
+                                <div style="flex: 1;">
+                                    <h4 style="margin-bottom: 8px;">TOEIC Mastery Program</h4>
+                                    <div class="flex-between mb-2">
+                                        <span style="font-size: 0.875rem; color: var(--color-gray-600);">Progress:
+                                            12%</span>
+                                    </div>
+                                    <div
+                                        style="height: 6px; background: var(--color-gray-200); border-radius: var(--radius-full);">
+                                        <div
+                                            style="height: 100%; width: 12%; background: var(--gradient-secondary); border-radius: var(--radius-full);">
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="course-detail.html?id=2" class="btn btn-secondary btn-sm">Continue</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sidebar -->
+                <div>
+                    <!-- Quick Actions -->
+                    <div class="card mb-6">
+                        <h3 style="margin-bottom: 16px;">Quick Actions</h3>
+                        <div class="flex-col gap-2">
+                            <a href="tests.html" class="btn btn-primary btn-sm">Take a Test</a>
+                            <a href="flashcards.html" class="btn btn-secondary btn-sm">Study Flashcards</a>
+                            <a href="dictionary.html" class="btn btn-outline btn-sm">Search Dictionary</a>
+                            <a href="courses.html" class="btn btn-outline btn-sm">Browse Courses</a>
+                        </div>
+                    </div>
+
+                    <!-- Study Goals -->
+                    <div class="card mb-6">
+                        <h3 style="margin-bottom: 16px;">Weekly Goals</h3>
+                        <div class="flex-col gap-3">
+                            <div>
+                                <div class="flex-between mb-2" style="font-size: 0.875rem;">
+                                    <span>Tests: 3/5</span>
+                                    <span style="color: var(--color-primary);">60%</span>
+                                </div>
+                                <div
+                                    style="height: 6px; background: var(--color-gray-200); border-radius: var(--radius-full);">
+                                    <div
+                                        style="height: 100%; width: 60%; background: var(--gradient-primary); border-radius: var(--radius-full);">
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex-between mb-2" style="font-size: 0.875rem;">
+                                    <span>Flashcards: 280/500</span>
+                                    <span style="color: var(--color-secondary);">56%</span>
+                                </div>
+                                <div
+                                    style="height: 6px; background: var(--color-gray-200); border-radius: var(--radius-full);">
+                                    <div
+                                        style="height: 100%; width: 56%; background: var(--gradient-secondary); border-radius: var(--radius-full);">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Achievements -->
+                    <div class="card">
+                        <h3 style="margin-bottom: 16px;">Recent Achievements</h3>
+                        <div class="flex-col gap-3">
+                            <div class="flex gap-3" style="align-items: center;">
+                                <div style="font-size: 2rem;">🏆</div>
+                                <div>
+                                    <div style="font-weight: 600; font-size: 0.875rem;">Perfect Score</div>
+                                    <div style="font-size: 0.75rem; color: var(--color-gray-500);">Scored 9.0 on a test
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex gap-3" style="align-items: center;">
+                                <div style="font-size: 2rem;">🔥</div>
+                                <div>
+                                    <div style="font-weight: 600; font-size: 0.875rem;">15-Day Streak</div>
+                                    <div style="font-size: 0.75rem; color: var(--color-gray-500);">Studied every day
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex gap-3" style="align-items: center;">
+                                <div style="font-size: 2rem;">⭐</div>
+                                <div>
+                                    <div style="font-weight: 600; font-size: 0.875rem;">Vocabulary Master</div>
+                                    <div style="font-size: 0.75rem; color: var(--color-gray-500);">1000+ words mastered
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>LearnHub</h4>
+                </div>
+                <div class="footer-section">
+                    <h4>Learn</h4>
+                    <div class="footer-links"><a href="dictionary.html" class="footer-link">Dictionary</a></div>
+                </div>
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <div class="footer-links"><a href="blog.html" class="footer-link">Blog</a></div>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <div class="footer-links"><a href="#" class="footer-link">Help</a></div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 LearnHub. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="common.js"></script>
+    <script>
+        document.getElementById('logoutBtn')?.addEventListener('click', () => {
+            localStorage.removeItem('user');
+            window.location.href = 'index.html';
+        });
+    </script>
+</body>
+
+</html>

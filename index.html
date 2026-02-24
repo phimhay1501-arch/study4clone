@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="LearnHub - Master English with IELTS, TOEIC practice tests, flashcards, and comprehensive courses">
+  <meta name="keywords" content="English learning, IELTS, TOEIC, vocabulary, flashcards, online courses">
+  <title>LearnHub - Master English Online</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header Navigation -->
+  <header class="header">
+    <div class="container">
+      <div class="header-content">
+        <a href="index.html" class="logo">LearnHub</a>
+        
+        <nav class="nav-menu">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="dictionary.html" class="nav-link">Dictionary</a>
+          <a href="tests.html" class="nav-link">Practice Tests</a>
+          <a href="flashcards.html" class="nav-link">Flashcards</a>
+          <a href="courses.html" class="nav-link">Courses</a>
+          <a href="blog.html" class="nav-link">Blog</a>
+        </nav>
+        
+        <div class="nav-actions">
+          <a href="#" id="loginBtn" class="btn btn-outline btn-sm">Login</a>
+          <a href="dashboard.html" class="btn btn-primary btn-sm">Dashboard</a>
+        </div>
+        
+        <button class="menu-toggle" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" style="background: linear-gradient(135deg, rgba(59, 130, 246, 0.1) 0%, rgba(16, 185, 129, 0.1) 100%); padding: 80px 0;">
+    <div class="container">
+      <div class="grid grid-2" style="align-items: center; gap: 60px;">
+        <div class="hero-content">
+          <h1 style="font-size: 3.5rem; margin-bottom: 24px; line-height: 1.1;">
+            Master English with 
+            <span style="background: linear-gradient(135deg, #3b82f6 0%, #10b981 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Confidence</span>
+          </h1>
+          <p style="font-size: 1.25rem; color: var(--color-gray-600); margin-bottom: 32px;">
+            Prepare for IELTS, TOEIC, and more with our comprehensive practice tests, interactive flashcards, and expert-designed courses.
+          </p>
+          <div class="flex gap-4">
+            <a href="tests.html" class="btn btn-primary btn-lg">Start Practicing</a>
+            <a href="courses.html" class="btn btn-outline btn-lg">Browse Courses</a>
+          </div>
+          
+          <!-- Stats -->
+          <div class="grid grid-3 mt-8" style="gap: 24px;">
+            <div>
+              <div style="font-size: 2rem; font-weight: 700; color: var(--color-primary);">1M+</div>
+              <div style="color: var(--color-gray-600); font-size: 0.875rem;">Active Learners</div>
+            </div>
+            <div>
+              <div style="font-size: 2rem; font-weight: 700; color: var(--color-secondary);">500+</div>
+              <div style="color: var(--color-gray-600); font-size: 0.875rem;">Practice Tests</div>
+            </div>
+            <div>
+              <div style="font-size: 2rem; font-weight: 700; color: var(--color-teal);">50K+</div>
+              <div style="color: var(--color-gray-600); font-size: 0.875rem;">Flashcards</div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="hero-image">
+          <div class="card card-glass" style="padding: 40px; text-align: center;">
+            <div style="width: 120px; height: 120px; margin: 0 auto 24px; background: linear-gradient(135deg, #3b82f6 0%, #10b981 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 4rem;">
+              📚
+            </div>
+            <h3 style="margin-bottom: 16px;">Start Learning Today</h3>
+            <p style="color: var(--color-gray-600); margin-bottom: 24px;">Join thousands of successful learners</p>
+            <a href="#" id="registerBtn" class="btn btn-secondary" style="width: 100%;">Create Free Account</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Courses -->
+  <section class="py-8" style="padding: 80px 0;">
+    <div class="container">
+      <div class="text-center mb-8">
+        <h2 style="font-size: 2.5rem; margin-bottom: 16px;">Featured Courses</h2>
+        <p style="color: var(--color-gray-600); font-size: 1.125rem;">Expert-designed courses to help you achieve your goals</p>
+      </div>
+      
+      <div class="grid grid-3">
+        <!-- Course Card 1 -->
+        <div class="card">
+          <div style="width: 100%; height: 200px; background: linear-gradient(135deg, #3b82f6 0%, #0ea5e9 100%); border-radius: 12px; margin-bottom: 20px; display: flex; align-items: center; justify-content: center; font-size: 4rem;">
+            🎯
+          </div>
+          <div class="badge badge-primary mb-2">IELTS</div>
+          <h3 class="card-title">IELTS Complete Preparation</h3>
+          <p style="color: var(--color-gray-600); margin-bottom: 16px;">Master all four skills: Listening, Reading, Writing, and Speaking with comprehensive practice materials.</p>
+          
+          <div class="flex-between mb-4" style="font-size: 0.875rem; color: var(--color-gray-500);">
+            <span>⭐ 4.8 (2,340)</span>
+            <span>👥 45,230 students</span>
+          </div>
+          
+          <div class="card-footer">
+            <div>
+              <span style="font-size: 1.5rem; font-weight: 700; color: var(--color-primary);">$79</span>
+              <span style="text-decoration: line-through; color: var(--color-gray-400); margin-left: 8px;">$129</span>
+            </div>
+            <a href="course-detail.html?id=1" class="btn btn-primary btn-sm">View Course</a>
+          </div>
+        </div>
+        
+        <!-- Course Card 2 -->
+        <div class="card">
+          <div style="width: 100%; height: 200px; background: linear-gradient(135deg, #10b981 0%, #059669 100%); border-radius: 12px; margin-bottom: 20px; display: flex; align-items: center; justify-content: center; font-size: 4rem;">
+            📝
+          </div>
+          <div class="badge badge-success mb-2">TOEIC</div>
+          <h3 class="card-title">TOEIC Mastery Program</h3>
+          <p style="color: var(--color-gray-600); margin-bottom: 16px;">Achieve your target score with strategic practice and proven techniques for the TOEIC exam.</p>
+          
+          <div class="flex-between mb-4" style="font-size: 0.875rem; color: var(--color-gray-500);">
+            <span>⭐ 4.9 (1,850)</span>
+            <span>👥 38,500 students</span>
+          </div>
+          
+          <div class="card-footer">
+            <div>
+              <span style="font-size: 1.5rem; font-weight: 700; color: var(--color-secondary);">$69</span>
+              <span style="text-decoration: line-through; color: var(--color-gray-400); margin-left: 8px;">$119</span>
+            </div>
+            <a href="course-detail.html?id=2" class="btn btn-secondary btn-sm">View Course</a>
+          </div>
+        </div>
+        
+        <!-- Course Card 3 -->
+        <div class="card">
+          <div style="width: 100%; height: 200px; background: linear-gradient(135deg, #14b8a6 0%, #06b6d4 100%); border-radius: 12px; margin-bottom: 20px; display: flex; align-items: center; justify-content: center; font-size: 4rem;">
+            💬
+          </div>
+          <div class="badge badge-primary mb-2">Speaking</div>
+          <h3 class="card-title">Advanced English Speaking</h3>
+          <p style="color: var(--color-gray-600); margin-bottom: 16px;">Build fluency and confidence in English conversation with interactive speaking exercises.</p>
+          
+          <div class="flex-between mb-4" style="font-size: 0.875rem; color: var(--color-gray-500);">
+            <span>⭐ 4.7 (1,420)</span>
+            <span>👥 28,900 students</span>
+          </div>
+          
+          <div class="card-footer">
+            <div>
+              <span style="font-size: 1.5rem; font-weight: 700; color: var(--color-teal);">$59</span>
+              <span style="text-decoration: line-through; color: var(--color-gray-400); margin-left: 8px;">$99</span>
+            </div>
+            <a href="course-detail.html?id=3" class="btn btn-primary btn-sm">View Course</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="text-center mt-8">
+        <a href="courses.html" class="btn btn-outline btn-lg">View All Courses</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Latest Practice Tests -->
+  <section class="py-8" style="padding: 80px 0; background: var(--color-white);">
+    <div class="container">
+      <div class="text-center mb-8">
+        <h2 style="font-size: 2.5rem; margin-bottom: 16px;">Latest Practice Tests</h2>
+        <p style="color: var(--color-gray-600); font-size: 1.125rem;">Simulate real exam conditions with our comprehensive tests</p>
+      </div>
+      
+      <div class="grid grid-4">
+        <!-- Test Card 1 -->
+        <div class="card">
+          <div class="flex-between mb-3">
+            <span class="badge badge-primary">IELTS Listening</span>
+            <span style="color: var(--color-gray-500); font-size: 0.875rem;">⏱️ 40 min</span>
+          </div>
+          <h4 style="margin-bottom: 12px;">IELTS Listening Test 1</h4>
+          <p style="color: var(--color-gray-600); font-size: 0.875rem; margin-bottom: 16px;">4 sections • 40 questions</p>
+          <div class="flex-between" style="font-size: 0.875rem; color: var(--color-gray-500); margin-bottom: 16px;">
+            <span>👥 125,430</span>
+            <span>⭐ 4.6</span>
+          </div>
+          <a href="test-interface.html?id=1" class="btn btn-outline btn-sm" style="width: 100%;">Start Test</a>
+        </div>
+        
+        <!-- Test Card 2 -->
+        <div class="card">
+          <div class="flex-between mb-3">
+            <span class="badge badge-success">IELTS Reading</span>
+            <span style="color: var(--color-gray-500); font-size: 0.875rem;">⏱️ 60 min</span>
+          </div>
+          <h4 style="margin-bottom: 12px;">IELTS Reading Test 1</h4>
+          <p style="color: var(--color-gray-600); font-size: 0.875rem; margin-bottom: 16px;">3 passages • 40 questions</p>
+          <div class="flex-between" style="font-size: 0.875rem; color: var(--color-gray-500); margin-bottom: 16px;">
+            <span>👥 98,250</span>
+            <span>⭐ 4.7</span>
+          </div>
+          <a href="test-interface.html?id=2" class="btn btn-outline btn-sm" style="width: 100%;">Start Test</a>
+        </div>
+        
+        <!-- Test Card 3 -->
+        <div class="card">
+          <div class="flex-between mb-3">
+            <span class="badge badge-primary">TOEIC Listening</span>
+            <span style="color: var(--color-gray-500); font-size: 0.875rem;">⏱️ 45 min</span>
+          </div>
+          <h4 style="margin-bottom: 12px;">TOEIC Listening Test 1</h4>
+          <p style="color: var(--color-gray-600); font-size: 0.875rem; margin-bottom: 16px;">4 parts • 100 questions</p>
+          <div class="flex-between" style="font-size: 0.875rem; color: var(--color-gray-500); margin-bottom: 16px;">
+            <span>👥 87,650</span>
+            <span>⭐ 4.8</span>
+          </div>
+          <a href="test-interface.html?id=3" class="btn btn-outline btn-sm" style="width: 100%;">Start Test</a>
+        </div>
+        
+        <!-- Test Card 4 -->
+        <div class="card">
+          <div class="flex-between mb-3">
+            <span class="badge badge-success">TOEIC Reading</span>
+            <span style="color: var(--color-gray-500); font-size: 0.875rem;">⏱️ 75 min</span>
+          </div>
+          <h4 style="margin-bottom: 12px;">TOEIC Reading Test 1</h4>
+          <p style="color: var(--color-gray-600); font-size: 0.875rem; margin-bottom: 16px;">3 parts • 100 questions</p>
+          <div class="flex-between" style="font-size: 0.875rem; color: var(--color-gray-500); margin-bottom: 16px;">
+            <span>👥 76,340</span>
+            <span>⭐ 4.5</span>
+          </div>
+          <a href="test-interface.html?id=4" class="btn btn-outline btn-sm" style="width: 100%;">Start Test</a>
+        </div>
+      </div>
+      
+      <div class="text-center mt-8">
+        <a href="tests.html" class="btn btn-primary btn-lg">View All Tests</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="py-8" style="padding: 80px 0;">
+    <div class="container">
+      <div class="text-center mb-8">
+        <h2 style="font-size: 2.5rem; margin-bottom: 16px;">Why Choose LearnHub?</h2>
+        <p style="color: var(--color-gray-600); font-size: 1.125rem;">Everything you need to succeed in your English learning journey</p>
+      </div>
+      
+      <div class="grid grid-3">
+        <div class="card text-center">
+          <div style="width: 80px; height: 80px; margin: 0 auto 24px; background: linear-gradient(135deg, rgba(59, 130, 246, 0.1) 0%, rgba(14, 165, 233, 0.1) 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 2.5rem;">
+            📖
+          </div>
+          <h3 style="margin-bottom: 12px;">Comprehensive Dictionary</h3>
+          <p style="color: var(--color-gray-600);">Access thousands of words with definitions, pronunciations, examples, and translations.</p>
+        </div>
+        
+        <div class="card text-center">
+          <div style="width: 80px; height: 80px; margin: 0 auto 24px; background: linear-gradient(135deg, rgba(16, 185, 129, 0.1) 0%, rgba(5, 150, 105, 0.1) 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 2.5rem;">
+            🎴
+          </div>
+          <h3 style="margin-bottom: 12px;">Smart Flashcards</h3>
+          <p style="color: var(--color-gray-600);">Learn vocabulary efficiently with spaced repetition and personalized study sessions.</p>
+        </div>
+        
+        <div class="card text-center">
+          <div style="width: 80px; height: 80px; margin: 0 auto 24px; background: linear-gradient(135deg, rgba(20, 184, 166, 0.1) 0%, rgba(6, 182, 212, 0.1) 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 2.5rem;">
+            📊
+          </div>
+          <h3 style="margin-bottom: 12px;">Progress Tracking</h3>
+          <p style="color: var(--color-gray-600);">Monitor your improvement with detailed analytics and performance insights.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="py-8" style="padding: 80px 0; background: linear-gradient(135deg, #3b82f6 0%, #10b981 100%);">
+    <div class="container text-center">
+      <h2 style="font-size: 2.5rem; color: white; margin-bottom: 16px;">Ready to Start Learning?</h2>
+      <p style="font-size: 1.25rem; color: rgba(255, 255, 255, 0.9); margin-bottom: 32px;">Join over 1 million learners achieving their English goals</p>
+      <div class="flex-center gap-4">
+        <a href="#" id="registerBtn2" class="btn btn-lg" style="background: white; color: var(--color-primary);">Get Started Free</a>
+        <a href="courses.html" class="btn btn-outline btn-lg" style="border-color: white; color: white;">Browse Courses</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4>LearnHub</h4>
+          <p style="color: var(--color-gray-400); margin-bottom: 16px;">Your complete English learning platform for IELTS, TOEIC, and beyond.</p>
+          <div class="flex gap-3">
+            <a href="#" style="color: var(--color-gray-400); font-size: 1.5rem;">📘</a>
+            <a href="#" style="color: var(--color-gray-400); font-size: 1.5rem;">🐦</a>
+            <a href="#" style="color: var(--color-gray-400); font-size: 1.5rem;">📷</a>
+          </div>
+        </div>
+        
+        <div class="footer-section">
+          <h4>Learn</h4>
+          <div class="footer-links">
+            <a href="dictionary.html" class="footer-link">Dictionary</a>
+            <a href="tests.html" class="footer-link">Practice Tests</a>
+            <a href="flashcards.html" class="footer-link">Flashcards</a>
+            <a href="courses.html" class="footer-link">Courses</a>
+          </div>
+        </div>
+        
+        <div class="footer-section">
+          <h4>Company</h4>
+          <div class="footer-links">
+            <a href="#" class="footer-link">About Us</a>
+            <a href="blog.html" class="footer-link">Blog</a>
+            <a href="#" class="footer-link">Careers</a>
+            <a href="#" class="footer-link">Contact</a>
+          </div>
+        </div>
+        
+        <div class="footer-section">
+          <h4>Support</h4>
+          <div class="footer-links">
+            <a href="#" class="footer-link">Help Center</a>
+            <a href="#" class="footer-link">Terms of Service</a>
+            <a href="#" class="footer-link">Privacy Policy</a>
+            <a href="activate.html" class="footer-link">Activate Account</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2026 LearnHub. All rights reserved. Built with ❤️ for English learners worldwide.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="common.js"></script>
+  <script>
+    // Additional register button
+    document.getElementById('registerBtn2')?.addEventListener('click', (e) => {
+      e.preventDefault();
+      if (window.registerModal) {
+        window.registerModal.open();
+      }
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="English-Vietnamese Dictionary with pronunciation, examples, and translations">
+    <title>Dictionary - LearnHub</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">LearnHub</a>
+                <nav class="nav-menu">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="dictionary.html" class="nav-link">Dictionary</a>
+                    <a href="tests.html" class="nav-link">Practice Tests</a>
+                    <a href="flashcards.html" class="nav-link">Flashcards</a>
+                    <a href="courses.html" class="nav-link">Courses</a>
+                    <a href="blog.html" class="nav-link">Blog</a>
+                </nav>
+                <div class="nav-actions">
+                    <a href="#" id="loginBtn" class="btn btn-outline btn-sm">Login</a>
+                    <a href="dashboard.html" class="btn btn-primary btn-sm">Dashboard</a>
+                </div>
+                <button class="menu-toggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main style="padding: 40px 0; min-height: calc(100vh - 400px);">
+        <div class="container">
+            <div class="grid grid-3" style="gap: 32px;">
+                <!-- Main Dictionary Area -->
+                <div style="grid-column: span 2;">
+                    <!-- Search Section -->
+                    <div class="card mb-6">
+                        <h1 style="margin-bottom: 24px;">English-Vietnamese Dictionary</h1>
+                        <div style="position: relative;">
+                            <input type="text" id="searchInput" class="form-input" placeholder="Search for a word..."
+                                style="font-size: 1.125rem; padding-right: 120px;">
+                            <div
+                                style="position: absolute; right: 12px; top: 50%; transform: translateY(-50%); display: flex; gap: 8px;">
+                                <button class="btn btn-sm btn-ghost" id="clearBtn">Clear</button>
+                                <button class="btn btn-sm btn-primary" id="searchBtn">Search</button>
+                            </div>
+                        </div>
+
+                        <!-- Suggestions -->
+                        <div id="suggestions" class="mt-4" style="display: none;">
+                            <p class="text-sm text-muted mb-2">Suggestions:</p>
+                            <div class="flex gap-2" style="flex-wrap: wrap;" id="suggestionsList"></div>
+                        </div>
+                    </div>
+
+                    <!-- Word Result -->
+                    <div id="wordResult" style="display: none;">
+                        <div class="card">
+                            <div class="flex-between mb-4">
+                                <div>
+                                    <h2 id="wordTitle" style="margin-bottom: 8px;"></h2>
+                                    <p id="wordPronunciation" style="color: var(--color-primary); font-size: 1.125rem;">
+                                    </p>
+                                </div>
+                                <button class="btn btn-secondary" id="favoriteBtn">⭐ Add to Favorites</button>
+                            </div>
+
+                            <!-- Translation Toggle -->
+                            <div class="flex gap-2 mb-4">
+                                <button class="btn btn-sm btn-primary" id="showEnglish">English</button>
+                                <button class="btn btn-sm btn-outline" id="showVietnamese">Vietnamese</button>
+                            </div>
+
+                            <!-- Definitions -->
+                            <div id="definitions" class="mb-6"></div>
+
+                            <!-- Examples -->
+                            <div id="examples" class="mb-6"></div>
+
+                            <!-- Synonyms & Antonyms -->
+                            <div class="grid grid-2 gap-4">
+                                <div id="synonymsSection"></div>
+                                <div id="antonymsSection"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Empty State -->
+                    <div id="emptyState" class="card text-center" style="padding: 60px 40px;">
+                        <div style="font-size: 4rem; margin-bottom: 16px;">📖</div>
+                        <h3 style="margin-bottom: 12px;">Search for a word</h3>
+                        <p style="color: var(--color-gray-600);">Enter a word above to see definitions, examples, and
+                            translations</p>
+                    </div>
+                </div>
+
+                <!-- Sidebar -->
+                <div>
+                    <!-- Recent Searches -->
+                    <div class="card mb-6">
+                        <h3 style="margin-bottom: 16px;">Recent Searches</h3>
+                        <div id="recentSearches">
+                            <p class="text-muted text-sm">No recent searches</p>
+                        </div>
+                    </div>
+
+                    <!-- Favorites -->
+                    <div class="card">
+                        <h3 style="margin-bottom: 16px;">Favorite Words</h3>
+                        <div id="favoriteWords">
+                            <p class="text-muted text-sm">No favorites yet</p>
+                        </div>
+                    </div>
+
+                    <!-- Quick Links -->
+                    <div class="card mt-6">
+                        <h3 style="margin-bottom: 16px;">Quick Links</h3>
+                        <div class="flex-col gap-2">
+                            <a href="flashcards.html" class="btn btn-outline btn-sm">Create Flashcards</a>
+                            <a href="tests.html" class="btn btn-outline btn-sm">Practice Tests</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>LearnHub</h4>
+                    <p style="color: var(--color-gray-400);">Your complete English learning platform.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Learn</h4>
+                    <div class="footer-links">
+                        <a href="dictionary.html" class="footer-link">Dictionary</a>
+                        <a href="tests.html" class="footer-link">Practice Tests</a>
+                        <a href="flashcards.html" class="footer-link">Flashcards</a>
+                        <a href="courses.html" class="footer-link">Courses</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <div class="footer-links">
+                        <a href="#" class="footer-link">About Us</a>
+                        <a href="blog.html" class="footer-link">Blog</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <div class="footer-links">
+                        <a href="#" class="footer-link">Help Center</a>
+                        <a href="activate.html" class="footer-link">Activate Account</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 LearnHub. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="common.js"></script>
+    <script src="dictionary.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Interface - LearnHub</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">LearnHub</a>
+                <div class="flex gap-4" style="align-items: center;">
+                    <span class="badge badge-primary">IELTS Listening Test 1</span>
+                    <div style="font-weight: 600; color: var(--color-error);" id="timer">⏱️ 40:00</div>
+                </div>
+                <button class="btn btn-error btn-sm" id="submitTest">Submit Test</button>
+            </div>
+        </div>
+    </header>
+
+    <main style="padding: 40px 0;">
+        <div class="container">
+            <div class="grid grid-3" style="gap: 32px;">
+                <!-- Question Area -->
+                <div style="grid-column: span 2;">
+                    <div class="card">
+                        <div class="flex-between mb-6">
+                            <h2>Section 1: Questions 1-10</h2>
+                            <span class="badge badge-primary">Listening</span>
+                        </div>
+
+                        <!-- Audio Player -->
+                        <div
+                            style="padding: 24px; background: var(--color-gray-100); border-radius: var(--radius-lg); margin-bottom: 32px;">
+                            <div class="flex-between mb-3">
+                                <span style="font-weight: 600;">Audio Track 1</span>
+                                <span style="font-size: 0.875rem; color: var(--color-gray-600);">0:00 / 5:30</span>
+                            </div>
+                            <div
+                                style="height: 8px; background: var(--color-gray-300); border-radius: var(--radius-full); margin-bottom: 16px;">
+                                <div
+                                    style="height: 100%; width: 0%; background: var(--gradient-primary); border-radius: var(--radius-full);">
+                                </div>
+                            </div>
+                            <div class="flex-center gap-3">
+                                <button class="btn btn-primary">▶️ Play</button>
+                                <button class="btn btn-outline btn-sm">⏮️</button>
+                                <button class="btn btn-outline btn-sm">⏭️</button>
+                            </div>
+                        </div>
+
+                        <!-- Questions -->
+                        <div class="flex-col gap-6">
+                            <div>
+                                <h4 style="margin-bottom: 16px;">Question 1</h4>
+                                <p style="margin-bottom: 16px; color: var(--color-gray-700);">What is the main topic of
+                                    the conversation?</p>
+                                <div class="flex-col gap-2">
+                                    <label class="form-radio">
+                                        <input type="radio" name="q1" value="A">
+                                        <span>A. Booking a hotel room</span>
+                                    </label>
+                                    <label class="form-radio">
+                                        <input type="radio" name="q1" value="B">
+                                        <span>B. Planning a vacation</span>
+                                    </label>
+                                    <label class="form-radio">
+                                        <input type="radio" name="q1" value="C">
+                                        <span>C. Discussing travel arrangements</span>
+                                    </label>
+                                    <label class="form-radio">
+                                        <input type="radio" name="q1" value="D">
+                                        <span>D. Comparing flight prices</span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div>
+                                <h4 style="margin-bottom: 16px;">Question 2</h4>
+                                <p style="margin-bottom: 16px; color: var(--color-gray-700);">Complete the sentence: The
+                                    meeting will be held on ________.</p>
+                                <input type="text" class="form-input" placeholder="Type your answer here">
+                            </div>
+
+                            <div>
+                                <h4 style="margin-bottom: 16px;">Question 3</h4>
+                                <p style="margin-bottom: 16px; color: var(--color-gray-700);">According to the speaker,
+                                    what is the most important factor?</p>
+                                <div class="flex-col gap-2">
+                                    <label class="form-radio">
+                                        <input type="radio" name="q3" value="A">
+                                        <span>A. Cost</span>
+                                    </label>
+                                    <label class="form-radio">
+                                        <input type="radio" name="q3" value="B">
+                                        <span>B. Quality</span>
+                                    </label>
+                                    <label class="form-radio">
+                                        <input type="radio" name="q3" value="C">
+                                        <span>C. Time</span>
+                                    </label>
+                                    <label class="form-radio">
+                                        <input type="radio" name="q3" value="D">
+                                        <span>D. Location</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flex gap-3 mt-8">
+                            <button class="btn btn-outline">← Previous</button>
+                            <button class="btn btn-primary">Next →</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Question Navigation -->
+                <div>
+                    <div class="card" style="position: sticky; top: 80px;">
+                        <h3 style="margin-bottom: 16px;">Questions</h3>
+                        <div style="display: grid; grid-template-columns: repeat(5, 1fr); gap: 8px;"
+                            id="questionNavGrid">
+                            <!-- Generated by JS -->
+                        </div>
+                        <div class="mt-6">
+                            <div class="flex gap-2 mb-2" style="font-size: 0.875rem; align-items: center;">
+                                <div
+                                    style="width: 16px; height: 16px; background: var(--gradient-primary); border-radius: 4px;">
+                                </div>
+                                <span>Current</span>
+                            </div>
+                            <div class="flex gap-2 mb-2" style="font-size: 0.875rem; align-items: center;">
+                                <div
+                                    style="width: 16px; height: 16px; background: var(--color-secondary); border-radius: 4px;">
+                                </div>
+                                <span>Answered</span>
+                            </div>
+                            <div class="flex gap-2" style="font-size: 0.875rem; align-items: center;">
+                                <div
+                                    style="width: 16px; height: 16px; border: 2px solid var(--color-gray-400); border-radius: 4px;">
+                                </div>
+                                <span>Not answered</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="common.js"></script>
+    <script>
+        // Timer
+        let timeLeft = 40 * 60; // 40 minutes in seconds
+        const timerEl = document.getElementById('timer');
+
+        setInterval(() => {
+            if (timeLeft > 0) {
+                timeLeft--;
+                const mins = Math.floor(timeLeft / 60);
+                const secs = timeLeft % 60;
+                timerEl.textContent = `⏱️ ${mins}:${secs.toString().padStart(2, '0')}`;
+            }
+        }, 1000);
+
+        document.getElementById('submitTest').addEventListener('click', () => {
+            if (confirm('Are you sure you want to submit your test?')) {
+                window.location.href = 'test-results.html?id=1';
+            }
+        });
+
+        // Generate Question Navigation Buttons
+        document.addEventListener('DOMContentLoaded', () => {
+            const grid = document.getElementById('questionNavGrid');
+            if (grid) {
+                grid.innerHTML = Array.from({ length: 40 }, (_, i) => `
+                    <button class="btn btn-sm ${i === 0 ? 'btn-primary' : 'btn-outline'}" 
+                            style="aspect-ratio: 1; padding: 4px; font-size: 0.75rem; min-width: 32px; height: 32px;">
+                        ${i + 1}
+                    </button>
+                `).join('');
+            }
+        });
+    </script>
+</body>
+
+</html>
